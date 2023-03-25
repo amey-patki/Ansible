@@ -1,0 +1,11 @@
+---
+- name: Install Softwares
+  hosts: all
+  become: true 
+
+  tasks:
+    - name: Software Installation
+      apt:
+         name: git
+         state : present
+

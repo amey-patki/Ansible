@@ -1,0 +1,21 @@
+---
+- name: Install Docker,Python3 and on target server
+  hosts : all
+  become : yes
+
+
+  vars:
+    software_packages:
+      - python3
+      - docker
+
+  tasks:
+    - name: update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install software packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ software_packages }}"
