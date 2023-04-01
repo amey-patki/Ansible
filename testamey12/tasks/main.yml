@@ -1,0 +1,6 @@
+---
+# tasks file for testamey12
+- name: user create
+  include_tasks: user.yml
+- name: install software
+  include_tasks: install.yml
