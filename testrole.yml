@@ -1,0 +1,6 @@
+---
+- name: test roles
+  hosts: all
+  become: yes
+  roles:
+   - testamey12

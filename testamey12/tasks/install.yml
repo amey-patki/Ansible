@@ -1,0 +1,5 @@
+---
+- name: install software
+  apt:
+   name: git
+   state: latest
