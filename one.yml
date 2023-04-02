@@ -1,0 +1,17 @@
+---
+ - name: calling funtions using modules
+   hosts: all
+   tasks:
+    - name: module usage
+      shell: |
+       date
+       hostname
+       uptime
+       
+
+       
+      register: out
+
+    - name: debug mesages
+      debug:
+        var: out
