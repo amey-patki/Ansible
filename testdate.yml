@@ -1,0 +1,19 @@
+---
+ - name: check date and hostname of the target system using register shell etc. modules
+   hosts: all
+   tasks:
+    - name: register date and check
+      shell: date
+      register: out
+
+    - name: register hostname
+      shell: hostname
+      register: out1
+
+    - name: debug messages
+      debug:
+        var: out
+
+    - name: debug message
+      debug:
+        var: out1

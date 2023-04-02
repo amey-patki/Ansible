@@ -1,0 +1,7 @@
+---
+ - name: test run with password
+   hosts: all
+   become: true
+   tasks:
+    - name: test connection
+      ping: 
