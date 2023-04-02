@@ -1,5 +1,5 @@
 ---
- - name: Diff module usage
+ - name: calling funtions using modules
    hosts: all
    tasks:
     - name: module usage
