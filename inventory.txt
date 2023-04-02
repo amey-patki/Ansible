@@ -1,0 +1,1 @@
+172.31.13.196 ansible_ssh_user=ubuntu ansible_sudo_pass=ubuntu 
